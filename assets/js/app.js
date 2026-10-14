@@ -221,6 +221,14 @@
     }).join("") + "</div>";
     html += "</article>";
 
+    if (e.id === "pourover") {
+      html += '<section class="related"><h2>视频演示</h2>' +
+        '<div class="video-wrap"><video controls preload="metadata" playsinline>' +
+        '<source src="assets/video/pourover-intro.mp4" type="video/mp4">' +
+        "您的浏览器不支持视频播放。</video></div>" +
+        '<p class="video-caption">一杯手冲，讲究的是慢 —— 20 秒看完一次完整的手冲流程。</p></section>';
+    }
+
     if (related.length) {
       html += '<section class="related"><h2>相关词条</h2><div class="entry-grid">';
       html += related.map(entryCard).join("");
