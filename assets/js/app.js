@@ -125,6 +125,13 @@
       '<div class="hero-stats">收录 ' + ENTRIES.length + " 个词条 · " + CATEGORIES.length + " 大分类</div>" +
       "</section>";
 
+    html += '<section class="section video-section"><div class="section-head"><h2>视频介绍</h2>' +
+      '<span class="more">手冲咖啡 · 20 秒</span></div>' +
+      '<div class="video-wrap"><video controls preload="metadata" playsinline>' +
+      '<source src="assets/video/pourover-intro.mp4" type="video/mp4">' +
+      "您的浏览器不支持视频播放。</video></div>" +
+      '<p class="video-caption">一杯手冲，讲究的是慢 —— 跟随咖啡师的双手，感受水温、流速与时间里的匠心。</p></section>';
+
     html += '<section class="section"><div class="section-head"><h2>浏览分类</h2></div><div class="cat-grid">';
     html += CATEGORIES.map(function (c) {
       var n = entriesOf(c.id).length;

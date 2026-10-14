@@ -363,6 +363,25 @@ mark {
 .related { max-width: 820px; margin: 32px auto 0; }
 .related h2 { font-size: 19px; letter-spacing: 2px; margin: 0 0 14px; }
 
+/* ---------- 视频介绍 ---------- */
+.video-wrap {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: #1c130d;
+}
+.video-wrap video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.video-caption {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  margin: 12px 0 0;
+}
+
 /* ---------- 页脚 ---------- */
 .site-footer {
   background: var(--brand-deep);
